@@ -51,6 +51,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 	[super touchesBegan:touches withEvent:event];
+	self.doubleThumbSlider.maxValue = 1;
 //	UIImageView *newImageView = self.newImageView;
 //	[self.doubleThumbSlider addSubview:newImageView];
 //	[self.doubleThumbSlider setValue:newImageView forKey:@"_thumbViewNeue"];

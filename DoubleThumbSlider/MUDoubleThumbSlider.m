@@ -192,6 +192,22 @@
 	
 }
 
+#pragma mark - Property setter
+
+- (void)setMaxValue:(CGFloat)maxValue {
+	if (_maxValue != maxValue) {
+		_maxValue = maxValue;
+		[self setNeedsLayout];
+	}
+}
+
+- (void)setMinValue:(CGFloat)minValue {
+	if (_minValue != minValue) {
+		_minValue = minValue;
+		[self setNeedsLayout];
+	}
+}
+
 #pragma mark - Private method
 
 /**
