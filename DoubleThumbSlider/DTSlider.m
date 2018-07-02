@@ -51,8 +51,8 @@
 
 #pragma mark - View
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
+- (void)_layoutSubviewsForBoundsChange:(BOOL)boundsChange {
+    [super _layoutSubviewsForBoundsChange:boundsChange];
     CGRect frame = CGRectZero;
     
     if (!_oldThumbView) {
@@ -89,7 +89,7 @@
     //    frame.origin.x = (progress.size.width - frame.size.width) * (self.minValue / (self.maximumValue-self.minimumValue));
     //    frame.origin.x += progress.origin.x;
     frame = [self _thumbRectForValue:_minValue];
-    NSLog(@"Min %f => %@", _minValue, NSStringFromCGRect(frame));
+//    NSLog(@"Min %f => %@", _minValue, NSStringFromCGRect(frame));
     _minThumbView.frame = frame;
     
     //    frame = _maxThumbView.frame;
@@ -163,13 +163,13 @@
             // 最小值不能大于最大值，下同
             if (_minValue > _maxValue) {
                 _minValue = _maxValue;
-                self.value = _minValue;
+//                self.value = _minValue;
             }
         } else if (self._currentThumbView == _maxThumbView) {
             _maxValue = self.value;
             if (_maxValue < _minValue) {
                 _maxValue = _minValue;
-                self.value = _maxValue;
+//                self.value = _maxValue;
             }
         }
     }
@@ -181,18 +181,65 @@
 
 #pragma mark - Property setter
 
-- (void)setMaxValue:(float)maxValue {
-    if (_maxValue != maxValue) {
-        _maxValue = maxValue;
+- (void)setMaxValue:(float)maxValue animated:(BOOL)animated {
+    if (_maxValue == maxValue) {
+        return;
+    }
+    _maxValue = maxValue;
+    self._currentThumbView = _maxThumbView;
+    if (animated) {
+        [UIView animateWithDuration:0.3
+                              delay:0 options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             [self setValue:maxValue animated:YES];
+                         } completion:nil];
+    } else {
         [self setValue:maxValue];
     }
 }
 
-- (void)setMinValue:(float)minValue {
-    if (_minValue != minValue) {
-        _minValue = minValue;
+- (void)setMinValue:(float)minValue animated:(BOOL)animated {
+    if (_minValue == minValue) {
+        return;
+    }
+    _minValue = minValue;
+    self._currentThumbView = _minThumbView;
+    if (animated) {
+        [UIView animateWithDuration:0.3
+                              delay:0 options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             [self setValue:minValue animated:YES];
+                         } completion:nil];
+    } else {
         [self setValue:minValue];
     }
+}
+
+- (void)setMinValue:(float)minValue maxValue:(float)maxValue animated:(BOOL)animated {
+    if (_minValue == minValue && _maxValue == maxValue) {
+        return;
+    }
+    _minValue = minValue;
+    _maxValue = maxValue;
+    if (animated) {
+        [UIView animateWithDuration:0.3
+                              delay:0 options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             [self setValue:minValue animated:YES];
+                             [self setValue:maxValue animated:YES];
+                         } completion:nil];
+    } else {
+        [self setValue:minValue];
+        [self setValue:maxValue];
+    }
+}
+
+- (void)setMaxValue:(float)maxValue {
+    [self setMaxValue:maxValue animated:NO];
+}
+
+- (void)setMinValue:(float)minValue {
+    [self setMinValue:minValue animated:NO];
 }
 
 #pragma mark - Private method
@@ -229,6 +276,7 @@
  *  交换左右滑块
  */
 - (void)exchangeMaxAndMinThumb {
+    NSLog(@"exchangeMaxAndMinThumb");
     id temp = _minThumbView;
     _minThumbView = _maxThumbView;
     _maxThumbView = temp;

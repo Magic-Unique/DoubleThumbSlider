@@ -2,7 +2,7 @@
 //  DTSlider.h
 //  DoubleThumbSliderDemo
 //
-//  Created by 吴双 on 2018/7/1.
+//  Created by Magic-Unique on 2018/7/1.
 //  Copyright © 2018年 unique. All rights reserved.
 //
 
@@ -15,5 +15,9 @@
 
 /** Current min value */
 @property (nonatomic, assign) float minValue;
+
+- (void)setMaxValue:(float)maxValue animated:(BOOL)animated;
+- (void)setMinValue:(float)minValue animated:(BOOL)animated;
+- (void)setMinValue:(float)minValue maxValue:(float)maxValue animated:(BOOL)animated;
 
 @end

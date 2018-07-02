@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		369843368F2E922861F024D6 /* libPods-DoubleThumbSliderDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D6D354A1365311843519A0 /* libPods-DoubleThumbSliderDemo.a */; };
 		6DD59D3620E9273A00D86DEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD59D3520E9273A00D86DEA /* AppDelegate.m */; };
 		6DD59D3920E9273A00D86DEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD59D3820E9273A00D86DEA /* ViewController.m */; };
 		6DD59D3C20E9273A00D86DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD59D3A20E9273A00D86DEA /* Main.storyboard */; };
 		6DD59D3E20E9273A00D86DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD59D3D20E9273A00D86DEA /* Assets.xcassets */; };
 		6DD59D4120E9273A00D86DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD59D3F20E9273A00D86DEA /* LaunchScreen.storyboard */; };
 		6DD59D4420E9273A00D86DEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD59D4320E9273A00D86DEA /* main.m */; };
-		6DD59D4D20E927CE00D86DEA /* DTSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD59D4C20E927CE00D86DEA /* DTSlider.m */; };
-		6DD59D5020E928F800D86DEA /* DTSlider+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD59D4F20E928F800D86DEA /* DTSlider+Private.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +27,9 @@
 		6DD59D4020E9273A00D86DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DD59D4220E9273A00D86DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DD59D4320E9273A00D86DEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6DD59D4B20E927CE00D86DEA /* DTSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTSlider.h; sourceTree = "<group>"; };
-		6DD59D4C20E927CE00D86DEA /* DTSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTSlider.m; sourceTree = "<group>"; };
-		6DD59D4E20E928F800D86DEA /* DTSlider+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTSlider+Private.h"; sourceTree = "<group>"; };
-		6DD59D4F20E928F800D86DEA /* DTSlider+Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DTSlider+Private.m"; sourceTree = "<group>"; };
+		B3F4105B16B1E7D20BB95447 /* Pods-DoubleThumbSliderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleThumbSliderDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleThumbSliderDemo/Pods-DoubleThumbSliderDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B5E16550DFB5A3F511E9A8E5 /* Pods-DoubleThumbSliderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleThumbSliderDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleThumbSliderDemo/Pods-DoubleThumbSliderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C2D6D354A1365311843519A0 /* libPods-DoubleThumbSliderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoubleThumbSliderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369843368F2E922861F024D6 /* libPods-DoubleThumbSliderDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AC4D8476545B4240534A079 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5E16550DFB5A3F511E9A8E5 /* Pods-DoubleThumbSliderDemo.debug.xcconfig */,
+				B3F4105B16B1E7D20BB95447 /* Pods-DoubleThumbSliderDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F8655199B12F9B7FFCEF291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2D6D354A1365311843519A0 /* libPods-DoubleThumbSliderDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6DD59D2820E9273A00D86DEA = {
 			isa = PBXGroup;
 			children = (
-				6DD59D4A20E927C400D86DEA /* DoubleThumbSlider */,
 				6DD59D3320E9273A00D86DEA /* DoubleThumbSliderDemo */,
 				6DD59D3220E9273A00D86DEA /* Products */,
+				4AC4D8476545B4240534A079 /* Pods */,
+				4F8655199B12F9B7FFCEF291 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,17 +95,6 @@
 			path = DoubleThumbSliderDemo;
 			sourceTree = "<group>";
 		};
-		6DD59D4A20E927C400D86DEA /* DoubleThumbSlider */ = {
-			isa = PBXGroup;
-			children = (
-				6DD59D4B20E927CE00D86DEA /* DTSlider.h */,
-				6DD59D4C20E927CE00D86DEA /* DTSlider.m */,
-				6DD59D4E20E928F800D86DEA /* DTSlider+Private.h */,
-				6DD59D4F20E928F800D86DEA /* DTSlider+Private.m */,
-			);
-			path = DoubleThumbSlider;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DD59D4720E9273A00D86DEA /* Build configuration list for PBXNativeTarget "DoubleThumbSliderDemo" */;
 			buildPhases = (
+				C92077605E41DAE30F6E1134 /* [CP] Check Pods Manifest.lock */,
 				6DD59D2D20E9273A00D86DEA /* Sources */,
 				6DD59D2E20E9273A00D86DEA /* Frameworks */,
 				6DD59D2F20E9273A00D86DEA /* Resources */,
@@ -155,13 +162,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C92077605E41DAE30F6E1134 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoubleThumbSliderDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6DD59D2D20E9273A00D86DEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DD59D5020E928F800D86DEA /* DTSlider+Private.m in Sources */,
-				6DD59D4D20E927CE00D86DEA /* DTSlider.m in Sources */,
 				6DD59D3920E9273A00D86DEA /* ViewController.m in Sources */,
 				6DD59D4420E9273A00D86DEA /* main.m in Sources */,
 				6DD59D3620E9273A00D86DEA /* AppDelegate.m in Sources */,
@@ -296,6 +322,7 @@
 		};
 		6DD59D4820E9273A00D86DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E16550DFB5A3F511E9A8E5 /* Pods-DoubleThumbSliderDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -305,7 +332,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unique.DoubleThumbSliderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "78d163c0-ca51-4ba1-8e59-9e7c43780187";
+				PROVISIONING_PROFILE = "845ba7ef-c477-487f-bd65-73f7768dcead";
 				PROVISIONING_PROFILE_SPECIFIER = Development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +340,7 @@
 		};
 		6DD59D4920E9273A00D86DEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F4105B16B1E7D20BB95447 /* Pods-DoubleThumbSliderDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

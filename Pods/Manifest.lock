@@ -1,0 +1,16 @@
+PODS:
+  - DoubleThumbSlider (0.0.3)
+
+DEPENDENCIES:
+  - DoubleThumbSlider (from `.`)
+
+EXTERNAL SOURCES:
+  DoubleThumbSlider:
+    :path: "."
+
+SPEC CHECKSUMS:
+  DoubleThumbSlider: c381b37b281873a141586a9ef31ec59a41a102ac
+
+PODFILE CHECKSUM: 633282ae0ea14cdf48f56fda06d5e960d75b9eec
+
+COCOAPODS: 1.5.3

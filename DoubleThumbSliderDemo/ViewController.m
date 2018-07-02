@@ -2,12 +2,12 @@
 //  ViewController.m
 //  DoubleThumbSliderDemo
 //
-//  Created by 吴双 on 2018/7/1.
+//  Created by Magic-Unique on 2018/7/1.
 //  Copyright © 2018年 unique. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "DTSlider.h"
+#import <DoubleThumbSlider/DTSlider.h>
 
 @interface ViewController ()
 
@@ -45,16 +45,19 @@
 }
 
 - (void)sliderAction:(DTSlider *)sender {
+    static BOOL skip = YES;
+    if (skip) {
+        skip = NO;
+        return;
+    }
+    skip = YES;
+    NSLog(@"sss");
     DTSlider *targetSlider = (sender == self.customSlider) ? self.normalSlider : self.customSlider;
-    targetSlider.minValue = sender.minValue;
-    targetSlider.maxValue = sender.maxValue;
-//    [UIView animateWithDuration:0.3
-//                          delay:0 options:UIViewAnimationOptionCurveEaseOut
-//                     animations:^{
-//                         [targetSlider setMaxValue:sender.maxValue animated:YES];
-//                     } completion:^(BOOL finished) {
-//
-//                     }];
+//    targetSlider.minValue = sender.minValue;
+//    [targetSlider setMinValue:sender.minValue animated:YES];
+//    targetSlider.maxValue = sender.maxValue;
+//    [targetSlider setMaxValue:sender.maxValue animated:YES];
+    [targetSlider setMinValue:sender.minValue maxValue:sender.maxValue animated:YES];
 }
 
 - (void)viewDidLayoutSubviews {
