@@ -23,7 +23,7 @@ UIImageView *DTCopyUIImageView(UIImageView *imageView) {
 @implementation DTSlider (Private)
 
 - (BOOL)_containsThumbImage {
-    return [self valueForKey:@"_thumbView"];
+    return [self valueForKey:@"_thumbView"] != nil;
 }
 
 #pragma mark - Private method

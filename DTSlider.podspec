@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint DoubleThumbSlider.podspec' to ensure this is a
+#  Be sure to run `pod spec lint DTSlider.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "DoubleThumbSlider"
+  s.name         = "DTSlider"
   s.version      = "0.0.3"
   s.summary      = "A Slider extends UISlider with double thumb controller."
 
@@ -92,10 +92,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "DoubleThumbSlider/**/*.{h,m}"
+  s.source_files  = "DTSlider/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "DoubleThumbSlider/DTSlider.h"
+  s.public_header_files = "DTSlider/DTSlider.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

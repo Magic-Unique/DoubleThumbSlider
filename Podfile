@@ -7,7 +7,7 @@ target 'DoubleThumbSliderDemo' do
 
   # Pods for DoubleThumbSliderDemo
 
-  pod 'DoubleThumbSlider', :path => '.'
+  pod 'DTSlider', :path => '.'
   # pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
   
 end

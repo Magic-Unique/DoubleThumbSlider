@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CAD6BF353B6E6E4DC5D1B18496278C74"
-               BlueprintName = "DoubleThumbSlider"
+               BlueprintIdentifier = "64F05A1FAAB2973CCDD91E8EA100AD48"
+               BlueprintName = "DTSlider"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libDoubleThumbSlider.a">
+               BuildableName = "libDTSlider.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,16 +1,16 @@
 PODS:
-  - DoubleThumbSlider (0.0.3)
+  - DTSlider (0.0.3)
 
 DEPENDENCIES:
-  - DoubleThumbSlider (from `.`)
+  - DTSlider (from `.`)
 
 EXTERNAL SOURCES:
-  DoubleThumbSlider:
+  DTSlider:
     :path: "."
 
 SPEC CHECKSUMS:
-  DoubleThumbSlider: c381b37b281873a141586a9ef31ec59a41a102ac
+  DTSlider: c42b960d282d536353e44726453a257fd3d4234a
 
-PODFILE CHECKSUM: 633282ae0ea14cdf48f56fda06d5e960d75b9eec
+PODFILE CHECKSUM: 482c4841f2343d4f3d7d2406559bd94050c9166d
 
 COCOAPODS: 1.5.3

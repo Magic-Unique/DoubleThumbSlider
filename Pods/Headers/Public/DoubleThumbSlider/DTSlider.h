@@ -1,1 +1,0 @@
-../../../../DoubleThumbSlider/DTSlider.h

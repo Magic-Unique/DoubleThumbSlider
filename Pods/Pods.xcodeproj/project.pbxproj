@@ -7,74 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041C48AB080365E230772AABCA8E5FC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		0F70BA06D934A1995E9BFEF10542B9BC /* DTSlider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7214629C1F117662931783E868AB22 /* DTSlider+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2789C785166DA1F74D7880C94416B2E0 /* DTSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A5DD8429D8EC910361D653683DFBE /* DTSlider.m */; };
-		41C7C0F804457F8BEEF04749FE88E98C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		69354DD841C8BD31D5B279B8F154131D /* DoubleThumbSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45228FC0617BCBFA683BAEA6D8393CD2 /* DoubleThumbSlider-dummy.m */; };
-		B8189B59B08541D65C7C9728AC5F769E /* DTSlider+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAB8356A2E8CF3F39FCF1F3A50FBE22 /* DTSlider+Private.m */; };
-		EC1FC620AD26783E372C7645A80C89F4 /* DTSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 061DBC2F4336F0390DA97A7D4EF3C1CD /* DTSlider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ECAD069FBA77C308A95E8768D1EC7759 /* Pods-DoubleThumbSliderDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A462DC7543D897795BFF46BB83F716B /* Pods-DoubleThumbSliderDemo-dummy.m */; };
+		3132D9FEDC88414DBC2688DEFDE6D29E /* DTSlider+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 1277B45BA2A0918AEE8A8C4B64E5C3E4 /* DTSlider+Private.m */; };
+		3C9A5B17C5FBF5CEBCAEF57B1FAFA46E /* DTSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F34680F0AF1DAB72C4A9762770A3ED9F /* DTSlider-dummy.m */; };
+		43AE8A25196B00C11FB4E7DDC901556D /* DTSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C191A178251F0FA3D191CC1E2353FD /* DTSlider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51DE8C1FE2CC840C57EA64E0001F2759 /* Pods-DoubleThumbSliderDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A462DC7543D897795BFF46BB83F716B /* Pods-DoubleThumbSliderDemo-dummy.m */; };
+		72930AFE3B88AF3D0E83D5074C8766C7 /* DTSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC7098DEBA8587B5FD6183856E5D0A /* DTSlider.m */; };
+		7CF7F29AC82FB29CFBB6BE6AC41E8923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B68F27ED09E1C6F48E3C8C55C7F6A9BD /* DTSlider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8269FA1CEC0C4CF48215BE9DA0E92290 /* DTSlider+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBD82EAE12E0B017F9F92E1091B2AD0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		530C9D88B39D5190F734CE5854D3450C /* PBXContainerItemProxy */ = {
+		CB9F2B32BC5952C5D7DE58994FDEC4F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CAD6BF353B6E6E4DC5D1B18496278C74;
-			remoteInfo = DoubleThumbSlider;
+			remoteGlobalIDString = 64F05A1FAAB2973CCDD91E8EA100AD48;
+			remoteInfo = DTSlider;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		061DBC2F4336F0390DA97A7D4EF3C1CD /* DTSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTSlider.h; path = DoubleThumbSlider/DTSlider.h; sourceTree = "<group>"; };
 		083C70A01FC6EBAE2293122BA55D680D /* Pods-DoubleThumbSliderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleThumbSliderDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		0994B64165BD3D7889F2643CAE81EF6A /* libDoubleThumbSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDoubleThumbSlider.a; path = libDoubleThumbSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAE658AD96F94A4CBBA7FA12567BF7A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1277B45BA2A0918AEE8A8C4B64E5C3E4 /* DTSlider+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DTSlider+Private.m"; path = "DTSlider/DTSlider+Private.m"; sourceTree = "<group>"; };
 		15B04F59E5B83C7D27F84F113D803005 /* Pods-DoubleThumbSliderDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoubleThumbSliderDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		1A462DC7543D897795BFF46BB83F716B /* Pods-DoubleThumbSliderDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoubleThumbSliderDemo-dummy.m"; sourceTree = "<group>"; };
-		1B4A5DD8429D8EC910361D653683DFBE /* DTSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTSlider.m; path = DoubleThumbSlider/DTSlider.m; sourceTree = "<group>"; };
-		34A90FDF2D2038BA292DE9F7EB6AE9C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		45228FC0617BCBFA683BAEA6D8393CD2 /* DoubleThumbSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DoubleThumbSlider-dummy.m"; sourceTree = "<group>"; };
+		31BC7098DEBA8587B5FD6183856E5D0A /* DTSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTSlider.m; path = DTSlider/DTSlider.m; sourceTree = "<group>"; };
+		657C018CC2F0FDDEA503F2ACC608E331 /* libDTSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDTSlider.a; path = libDTSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7DF5A0754009749035F9FC74B1A5D51E /* DoubleThumbSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DoubleThumbSlider.xcconfig; sourceTree = "<group>"; };
-		80B3377B6799C64AF7515EB584E77875 /* libPods-DoubleThumbSliderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DoubleThumbSliderDemo.a"; path = "libPods-DoubleThumbSliderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8269FA1CEC0C4CF48215BE9DA0E92290 /* DTSlider+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DTSlider+Private.h"; path = "DTSlider/DTSlider+Private.h"; sourceTree = "<group>"; };
+		8DE78B4ABBA124C7BF40154723699620 /* DTSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DTSlider.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A115C771D38736098528D0D4A3FA7517 /* DoubleThumbSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DoubleThumbSlider.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AE0F1E337837F23FC59AD0E56536B67 /* libPods-DoubleThumbSliderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DoubleThumbSliderDemo.a"; path = "libPods-DoubleThumbSliderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C191A178251F0FA3D191CC1E2353FD /* DTSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTSlider.h; path = DTSlider/DTSlider.h; sourceTree = "<group>"; };
 		B80306D1D8D350ADD0D19B58D2C8ABF8 /* Pods-DoubleThumbSliderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleThumbSliderDemo.release.xcconfig"; sourceTree = "<group>"; };
-		BBCCA15F14881CE682F3482B6F783A22 /* DoubleThumbSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DoubleThumbSlider-prefix.pch"; sourceTree = "<group>"; };
 		C0B8D34149C0075EF67FF37FBC054C49 /* Pods-DoubleThumbSliderDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoubleThumbSliderDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DAAB8356A2E8CF3F39FCF1F3A50FBE22 /* DTSlider+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DTSlider+Private.m"; path = "DoubleThumbSlider/DTSlider+Private.m"; sourceTree = "<group>"; };
+		C143E31E16F71773C84D4E8D1EC69EE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E74C6D0C0C1D3389AC363FB8F68CBE75 /* Pods-DoubleThumbSliderDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleThumbSliderDemo-resources.sh"; sourceTree = "<group>"; };
-		EF7214629C1F117662931783E868AB22 /* DTSlider+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DTSlider+Private.h"; path = "DoubleThumbSlider/DTSlider+Private.h"; sourceTree = "<group>"; };
 		F31061BEDABC1DC183713536876B3B84 /* Pods-DoubleThumbSliderDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleThumbSliderDemo-frameworks.sh"; sourceTree = "<group>"; };
+		F34680F0AF1DAB72C4A9762770A3ED9F /* DTSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTSlider-dummy.m"; sourceTree = "<group>"; };
+		F7369E2AB3344B056A216A0E8804D39D /* DTSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DTSlider.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F7CEC1C7E91141CD9E89883B54C7787B /* DTSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTSlider-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		40ABE96D7F7616C7E505FF42CA0551E1 /* Frameworks */ = {
+		38DA8A0E17C020FAABA4B5C6C3737742 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41C7C0F804457F8BEEF04749FE88E98C /* Foundation.framework in Frameworks */,
+				7CF7F29AC82FB29CFBB6BE6AC41E8923 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFDE07E75A4B03B55CA27A57B8DC534C /* Frameworks */ = {
+		58660AC241CE87727DBF82D3DF9721E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041C48AB080365E230772AABCA8E5FC1 /* Foundation.framework in Frameworks */,
+				CBD82EAE12E0B017F9F92E1091B2AD0B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D76E829139E94C9A76B401DBD3E524F /* Products */ = {
+		0DCD5CF22AB3B1EDB11EBA132BB99BE1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0994B64165BD3D7889F2643CAE81EF6A /* libDoubleThumbSlider.a */,
-				80B3377B6799C64AF7515EB584E77875 /* libPods-DoubleThumbSliderDemo.a */,
+				8DE78B4ABBA124C7BF40154723699620 /* DTSlider.xcconfig */,
+				F34680F0AF1DAB72C4A9762770A3ED9F /* DTSlider-dummy.m */,
+				F7CEC1C7E91141CD9E89883B54C7787B /* DTSlider-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/DTSlider";
+			sourceTree = "<group>";
+		};
+		2E44BC6F14C3272B3C49C2D5AAC1DDE0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F7369E2AB3344B056A216A0E8804D39D /* DTSlider.podspec */,
+				C143E31E16F71773C84D4E8D1EC69EE5 /* LICENSE */,
+				0CAE658AD96F94A4CBBA7FA12567BF7A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		316DD9890A967ECEB450E34CEDB93AE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				657C018CC2F0FDDEA503F2ACC608E331 /* libDTSlider.a */,
+				9AE0F1E337837F23FC59AD0E56536B67 /* libPods-DoubleThumbSliderDemo.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,25 +128,19 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				D27F78A9D785889FC489EEE1558A7A67 /* Development Pods */,
+				AF117C6A0DF0D099A96BDACA62A8F4EF /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1D76E829139E94C9A76B401DBD3E524F /* Products */,
+				316DD9890A967ECEB450E34CEDB93AE1 /* Products */,
 				4594B1C1EC3E7F31051CEFFB688D13FE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B8D5408A8EB22B5F3EF88054CD11A574 /* DoubleThumbSlider */ = {
+		AF117C6A0DF0D099A96BDACA62A8F4EF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				061DBC2F4336F0390DA97A7D4EF3C1CD /* DTSlider.h */,
-				1B4A5DD8429D8EC910361D653683DFBE /* DTSlider.m */,
-				EF7214629C1F117662931783E868AB22 /* DTSlider+Private.h */,
-				DAAB8356A2E8CF3F39FCF1F3A50FBE22 /* DTSlider+Private.m */,
-				FCE473876AF28E0B637308C4488C54D0 /* Pod */,
-				E61D22E97DDE7F59E925E2D0D94B184B /* Support Files */,
+				FB01CEC87E92A6CFF019BD4DC5DAD0D2 /* DTSlider */,
 			);
-			name = DoubleThumbSlider;
-			path = ..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -135,14 +151,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D27F78A9D785889FC489EEE1558A7A67 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B8D5408A8EB22B5F3EF88054CD11A574 /* DoubleThumbSlider */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,73 +159,67 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E61D22E97DDE7F59E925E2D0D94B184B /* Support Files */ = {
+		FB01CEC87E92A6CFF019BD4DC5DAD0D2 /* DTSlider */ = {
 			isa = PBXGroup;
 			children = (
-				7DF5A0754009749035F9FC74B1A5D51E /* DoubleThumbSlider.xcconfig */,
-				45228FC0617BCBFA683BAEA6D8393CD2 /* DoubleThumbSlider-dummy.m */,
-				BBCCA15F14881CE682F3482B6F783A22 /* DoubleThumbSlider-prefix.pch */,
+				A4C191A178251F0FA3D191CC1E2353FD /* DTSlider.h */,
+				31BC7098DEBA8587B5FD6183856E5D0A /* DTSlider.m */,
+				8269FA1CEC0C4CF48215BE9DA0E92290 /* DTSlider+Private.h */,
+				1277B45BA2A0918AEE8A8C4B64E5C3E4 /* DTSlider+Private.m */,
+				2E44BC6F14C3272B3C49C2D5AAC1DDE0 /* Pod */,
+				0DCD5CF22AB3B1EDB11EBA132BB99BE1 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/DoubleThumbSlider";
-			sourceTree = "<group>";
-		};
-		FCE473876AF28E0B637308C4488C54D0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A115C771D38736098528D0D4A3FA7517 /* DoubleThumbSlider.podspec */,
-				34A90FDF2D2038BA292DE9F7EB6AE9C6 /* README.md */,
-			);
-			name = Pod;
+			name = DTSlider;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0048668944FD4D0C605B1DE16A960A60 /* Headers */ = {
+		8882E44E071E8B442660EE31173B6192 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F70BA06D934A1995E9BFEF10542B9BC /* DTSlider+Private.h in Headers */,
-				EC1FC620AD26783E372C7645A80C89F4 /* DTSlider.h in Headers */,
+				B68F27ED09E1C6F48E3C8C55C7F6A9BD /* DTSlider+Private.h in Headers */,
+				43AE8A25196B00C11FB4E7DDC901556D /* DTSlider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		260FF17311E051B0B1C14D8EE0E39EDE /* Pods-DoubleThumbSliderDemo */ = {
+		15479D9B5FD3F4B69A0398A29F93B8D4 /* Pods-DoubleThumbSliderDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71F0715E703ADF9EF67B0C57D68E94A9 /* Build configuration list for PBXNativeTarget "Pods-DoubleThumbSliderDemo" */;
+			buildConfigurationList = 937CC39A493BEDB8EB45F71C0DCB9079 /* Build configuration list for PBXNativeTarget "Pods-DoubleThumbSliderDemo" */;
 			buildPhases = (
-				3B5473DC1AF5CF4E44DED1F9A0656A1F /* Sources */,
-				40ABE96D7F7616C7E505FF42CA0551E1 /* Frameworks */,
+				9A4C5C1E61842BAF4A86E76AA11F8607 /* Sources */,
+				58660AC241CE87727DBF82D3DF9721E1 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				49E1D97B0512B255FF18F90D5BB73124 /* PBXTargetDependency */,
+				F3F59508AF0FDF982E9EE8FD6662D3A3 /* PBXTargetDependency */,
 			);
 			name = "Pods-DoubleThumbSliderDemo";
 			productName = "Pods-DoubleThumbSliderDemo";
-			productReference = 80B3377B6799C64AF7515EB584E77875 /* libPods-DoubleThumbSliderDemo.a */;
+			productReference = 9AE0F1E337837F23FC59AD0E56536B67 /* libPods-DoubleThumbSliderDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CAD6BF353B6E6E4DC5D1B18496278C74 /* DoubleThumbSlider */ = {
+		64F05A1FAAB2973CCDD91E8EA100AD48 /* DTSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6ABA7E07FB1186CF3BE393762AC0337C /* Build configuration list for PBXNativeTarget "DoubleThumbSlider" */;
+			buildConfigurationList = 1D3E45CDAB2410C193D6E3C22C22EB83 /* Build configuration list for PBXNativeTarget "DTSlider" */;
 			buildPhases = (
-				DE70A79B45602330E71DA106B3263464 /* Sources */,
-				EFDE07E75A4B03B55CA27A57B8DC534C /* Frameworks */,
-				0048668944FD4D0C605B1DE16A960A60 /* Headers */,
+				C8B3A46805110696A93A4A0EE0F8F468 /* Sources */,
+				38DA8A0E17C020FAABA4B5C6C3737742 /* Frameworks */,
+				8882E44E071E8B442660EE31173B6192 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DoubleThumbSlider;
-			productName = DoubleThumbSlider;
-			productReference = 0994B64165BD3D7889F2643CAE81EF6A /* libDoubleThumbSlider.a */;
+			name = DTSlider;
+			productName = DTSlider;
+			productReference = 657C018CC2F0FDDEA503F2ACC608E331 /* libDTSlider.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -237,62 +239,62 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1D76E829139E94C9A76B401DBD3E524F /* Products */;
+			productRefGroup = 316DD9890A967ECEB450E34CEDB93AE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CAD6BF353B6E6E4DC5D1B18496278C74 /* DoubleThumbSlider */,
-				260FF17311E051B0B1C14D8EE0E39EDE /* Pods-DoubleThumbSliderDemo */,
+				64F05A1FAAB2973CCDD91E8EA100AD48 /* DTSlider */,
+				15479D9B5FD3F4B69A0398A29F93B8D4 /* Pods-DoubleThumbSliderDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B5473DC1AF5CF4E44DED1F9A0656A1F /* Sources */ = {
+		9A4C5C1E61842BAF4A86E76AA11F8607 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECAD069FBA77C308A95E8768D1EC7759 /* Pods-DoubleThumbSliderDemo-dummy.m in Sources */,
+				51DE8C1FE2CC840C57EA64E0001F2759 /* Pods-DoubleThumbSliderDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE70A79B45602330E71DA106B3263464 /* Sources */ = {
+		C8B3A46805110696A93A4A0EE0F8F468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69354DD841C8BD31D5B279B8F154131D /* DoubleThumbSlider-dummy.m in Sources */,
-				B8189B59B08541D65C7C9728AC5F769E /* DTSlider+Private.m in Sources */,
-				2789C785166DA1F74D7880C94416B2E0 /* DTSlider.m in Sources */,
+				3132D9FEDC88414DBC2688DEFDE6D29E /* DTSlider+Private.m in Sources */,
+				3C9A5B17C5FBF5CEBCAEF57B1FAFA46E /* DTSlider-dummy.m in Sources */,
+				72930AFE3B88AF3D0E83D5074C8766C7 /* DTSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		49E1D97B0512B255FF18F90D5BB73124 /* PBXTargetDependency */ = {
+		F3F59508AF0FDF982E9EE8FD6662D3A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DoubleThumbSlider;
-			target = CAD6BF353B6E6E4DC5D1B18496278C74 /* DoubleThumbSlider */;
-			targetProxy = 530C9D88B39D5190F734CE5854D3450C /* PBXContainerItemProxy */;
+			name = DTSlider;
+			target = 64F05A1FAAB2973CCDD91E8EA100AD48 /* DTSlider */;
+			targetProxy = CB9F2B32BC5952C5D7DE58994FDEC4F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04BC8E7CB77269CA7DF2BE6BAA2F0A2B /* Debug */ = {
+		2DD15F4AAEC3AB9681852EF1055A48E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DF5A0754009749035F9FC74B1A5D51E /* DoubleThumbSlider.xcconfig */;
+			baseConfigurationReference = 8DE78B4ABBA124C7BF40154723699620 /* DTSlider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/DoubleThumbSlider/DoubleThumbSlider-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/DTSlider/DTSlider-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = DoubleThumbSlider;
-				PRODUCT_NAME = DoubleThumbSlider;
+				PRODUCT_MODULE_NAME = DTSlider;
+				PRODUCT_NAME = DTSlider;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -422,7 +424,31 @@
 			};
 			name = Release;
 		};
-		8D4602F14FDE4C23B6FDDF62404CE920 /* Release */ = {
+		9D9D46FA7656971AD7804E69CB8FEFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE78B4ABBA124C7BF40154723699620 /* DTSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DTSlider/DTSlider-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DTSlider;
+				PRODUCT_NAME = DTSlider;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC693C5D9B0245FB4EF9C39798F2DDB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B80306D1D8D350ADD0D19B58D2C8ABF8 /* Pods-DoubleThumbSliderDemo.release.xcconfig */;
 			buildSettings = {
@@ -445,31 +471,7 @@
 			};
 			name = Release;
 		};
-		F3B5B0AA0F76F269EF172C771BCBFFF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DF5A0754009749035F9FC74B1A5D51E /* DoubleThumbSlider.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/DoubleThumbSlider/DoubleThumbSlider-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = DoubleThumbSlider;
-				PRODUCT_NAME = DoubleThumbSlider;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F9622555EA2BB3CCE8B41A55C1EFBDC6 /* Debug */ = {
+		E2F4A0E6F38E9ECE87434375EBB1280F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 083C70A01FC6EBAE2293122BA55D680D /* Pods-DoubleThumbSliderDemo.debug.xcconfig */;
 			buildSettings = {
@@ -494,6 +496,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D3E45CDAB2410C193D6E3C22C22EB83 /* Build configuration list for PBXNativeTarget "DTSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DD15F4AAEC3AB9681852EF1055A48E5 /* Debug */,
+				9D9D46FA7656971AD7804E69CB8FEFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -503,20 +514,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6ABA7E07FB1186CF3BE393762AC0337C /* Build configuration list for PBXNativeTarget "DoubleThumbSlider" */ = {
+		937CC39A493BEDB8EB45F71C0DCB9079 /* Build configuration list for PBXNativeTarget "Pods-DoubleThumbSliderDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04BC8E7CB77269CA7DF2BE6BAA2F0A2B /* Debug */,
-				F3B5B0AA0F76F269EF172C771BCBFFF8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71F0715E703ADF9EF67B0C57D68E94A9 /* Build configuration list for PBXNativeTarget "Pods-DoubleThumbSliderDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F9622555EA2BB3CCE8B41A55C1EFBDC6 /* Debug */,
-				8D4602F14FDE4C23B6FDDF62404CE920 /* Release */,
+				E2F4A0E6F38E9ECE87434375EBB1280F /* Debug */,
+				BC693C5D9B0245FB4EF9C39798F2DDB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
