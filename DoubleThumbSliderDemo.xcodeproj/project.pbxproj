@@ -14,6 +14,7 @@
 		6DD59D3E20E9273A00D86DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD59D3D20E9273A00D86DEA /* Assets.xcassets */; };
 		6DD59D4120E9273A00D86DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD59D3F20E9273A00D86DEA /* LaunchScreen.storyboard */; };
 		6DD59D4420E9273A00D86DEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD59D4320E9273A00D86DEA /* main.m */; };
+		7EDA65CE20E9FD270038D41E /* DTSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA65CD20E9FD270038D41E /* DTSliderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		6DD59D4020E9273A00D86DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DD59D4220E9273A00D86DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DD59D4320E9273A00D86DEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EDA65CC20E9FD270038D41E /* DTSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTSliderView.h; sourceTree = "<group>"; };
+		7EDA65CD20E9FD270038D41E /* DTSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTSliderView.m; sourceTree = "<group>"; };
 		B3F4105B16B1E7D20BB95447 /* Pods-DoubleThumbSliderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleThumbSliderDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleThumbSliderDemo/Pods-DoubleThumbSliderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B5E16550DFB5A3F511E9A8E5 /* Pods-DoubleThumbSliderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleThumbSliderDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleThumbSliderDemo/Pods-DoubleThumbSliderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C2D6D354A1365311843519A0 /* libPods-DoubleThumbSliderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoubleThumbSliderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +89,8 @@
 				6DD59D3520E9273A00D86DEA /* AppDelegate.m */,
 				6DD59D3720E9273A00D86DEA /* ViewController.h */,
 				6DD59D3820E9273A00D86DEA /* ViewController.m */,
+				7EDA65CC20E9FD270038D41E /* DTSliderView.h */,
+				7EDA65CD20E9FD270038D41E /* DTSliderView.m */,
 				6DD59D3A20E9273A00D86DEA /* Main.storyboard */,
 				6DD59D3D20E9273A00D86DEA /* Assets.xcassets */,
 				6DD59D3F20E9273A00D86DEA /* LaunchScreen.storyboard */,
@@ -191,6 +196,7 @@
 				6DD59D3920E9273A00D86DEA /* ViewController.m in Sources */,
 				6DD59D4420E9273A00D86DEA /* main.m in Sources */,
 				6DD59D3620E9273A00D86DEA /* AppDelegate.m in Sources */,
+				7EDA65CE20E9FD270038D41E /* DTSliderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

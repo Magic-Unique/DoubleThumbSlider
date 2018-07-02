@@ -7,12 +7,17 @@
 //
 
 #import "ViewController.h"
-#import <DoubleThumbSlider/DTSlider.h>
+#import "DTSliderView.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong, readonly) DTSlider *normalSlider;
-@property (nonatomic, strong, readonly) DTSlider *customSlider;
+@property (nonatomic, strong, readonly) UIView *bgView;
+
+@property (nonatomic, strong, readonly) DTSliderView *normalSliderView;
+@property (nonatomic, strong, readonly) DTSliderView *customSliderView;
+
+@property (nonatomic, strong, readonly) UIButton *applyBtn;
+@property (nonatomic, strong, readonly) UISwitch *animationg;
 
 @end
 
@@ -20,48 +25,85 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _normalSlider = [DTSlider new];
-    _normalSlider.continuous = NO;
-    [_normalSlider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:_normalSlider];
+    _bgView = [UIView new];
+    [self.view addSubview:_bgView];
     
-    _customSlider = [DTSlider new];
-    _customSlider.continuous = NO;
-    [_customSlider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
-    [_customSlider setThumbImage:[UIImage imageNamed:@"slider_thumb"] forState:UIControlStateNormal];
-    [_customSlider setMinimumTrackImage:[UIImage imageNamed:@"slider_enable"] forState:UIControlStateNormal];
-    [_customSlider setMaximumTrackImage:[UIImage imageNamed:@"slider_disable"] forState:UIControlStateNormal];
-    [_customSlider setMaximumValueImage:[UIImage imageNamed:@"slider_max"]];
-    [_customSlider setMinimumValueImage:[UIImage imageNamed:@"slider_min"]];
-    [self.view addSubview:_customSlider];
+    _normalSliderView = [DTSliderView new];
+    [self.bgView addSubview:_normalSliderView];
+
     
-    CGRect frame = self.view.bounds;
-    frame.size.height *= 0.5;
+    _customSliderView = [DTSliderView new];
+//    _customSlider.continuous = NO;
+    [_customSliderView.slider setThumbImage:[UIImage imageNamed:@"slider_thumb"] forState:UIControlStateNormal];
+    [_customSliderView.slider setMinimumTrackImage:[UIImage imageNamed:@"slider_enable"] forState:UIControlStateNormal];
+    [_customSliderView.slider setMaximumTrackImage:[UIImage imageNamed:@"slider_disable"] forState:UIControlStateNormal];
+    [_customSliderView.slider setMaximumValueImage:[UIImage imageNamed:@"slider_max"]];
+    [_customSliderView.slider setMinimumValueImage:[UIImage imageNamed:@"slider_min"]];
+    [self.bgView addSubview:_customSliderView];
     
-    self.normalSlider.frame = frame;
+    _applyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_applyBtn setTitle:@"Apply value animation: " forState:UIControlStateNormal];
+    [_applyBtn setTitleColor:UIColor.greenColor forState:UIControlStateNormal];
+    [_applyBtn sizeToFit];
+    [_applyBtn addTarget:self action:@selector(onApply) forControlEvents:UIControlEventTouchUpInside];
+    [self.bgView addSubview:_applyBtn];
     
-    frame.origin.y += frame.size.height;
-    self.customSlider.frame = frame;
+    _animationg = [UISwitch new];
+    [self.bgView addSubview:_animationg];
 }
 
-- (void)sliderAction:(DTSlider *)sender {
-    static BOOL skip = YES;
-    if (skip) {
-        skip = NO;
-        return;
-    }
-    skip = YES;
-    NSLog(@"sss");
-    DTSlider *targetSlider = (sender == self.customSlider) ? self.normalSlider : self.customSlider;
-//    targetSlider.minValue = sender.minValue;
-//    [targetSlider setMinValue:sender.minValue animated:YES];
-//    targetSlider.maxValue = sender.maxValue;
-//    [targetSlider setMaxValue:sender.maxValue animated:YES];
-    [targetSlider setMinValue:sender.minValue maxValue:sender.maxValue animated:YES];
+- (UILabel *)createLabel {
+    UILabel *label = [UILabel new];
+    label.text = @"0.0000000";
+    label.font = [UIFont fontWithName:@"Courier" size:20];
+    return label;
+}
+
+- (void)onApply {
+    [self.customSliderView.slider setMinValue:self.normalSliderView.slider.minValue
+                                     maxValue:self.normalSliderView.slider.maxValue
+                                     animated:self.animationg.isOn];
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
+    
+    CGRect frame = self.view.bounds;
+    frame.origin.y += 20;
+    frame.size.height -= 20;
+    self.bgView.frame = frame;
+    
+    CGRect midFrame = CGRectZero;
+    midFrame.size.width = self.view.bounds.size.width;
+    midFrame.size.height = MAX(self.applyBtn.frame.size.height, self.animationg.frame.size.height) + 40;
+    
+    [_applyBtn sizeToFit];
+    
+    CGRect bounds = frame;
+    
+    frame = self.normalSliderView.frame;
+    frame.origin.x = 0;
+    frame.origin.y = 20;
+    frame.size.width = bounds.size.width;
+    frame.size.height = (bounds.size.height - midFrame.size.height) * 0.5;
+    self.normalSliderView.frame = frame;
+    
+    frame = self.applyBtn.frame;
+    frame.size.height = midFrame.size.height;
+    frame.origin.y = (bounds.size.height - frame.size.height) * 0.5;
+    self.applyBtn.frame = frame;
+    
+    frame = self.animationg.frame;
+    frame.origin.x = bounds.size.width - frame.size.width;
+    frame.origin.y = (bounds.size.height - frame.size.height) * 0.5;
+    self.animationg.frame = frame;
+    
+    frame = self.customSliderView.frame;
+    frame.origin.x = 0;
+    frame.origin.y = bounds.size.height - self.normalSliderView.frame.size.height;
+    frame.size.width = bounds.size.width;
+    frame.size.height = self.normalSliderView.frame.size.height;
+    self.customSliderView.frame = frame;
 }
 
 
