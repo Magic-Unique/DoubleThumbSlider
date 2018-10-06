@@ -4,6 +4,14 @@ A slider with two thumbs.
 
 双滑块控件
 
+## Warning ！！
+
+[Refused by Apple](https://github.com/Magic-Unique/DoubleThumbSlider/issues/1)
+
+DTSlider use private APIs of UISlider class, It will cause your App refused by App Store. 
+
+DTSlider 用到了 UISlider 类中的私有 API，这将会导致你的 App 会被拒绝上传至 App Store。
+
 ## Preview 效果图
 
 ![gif](Slider.gif)
