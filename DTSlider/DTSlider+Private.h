@@ -8,7 +8,13 @@
 
 #import "DTSlider.h"
 
+#define CFSTR__minTrackView     DTStringFrom(@"`njoUsbdlWjfx")
+#define CFSTR__maxTrackView     DTStringFrom(@"`nbyUsbdlWjfx")
+#define CFSTR__thumbView        DTStringFrom(@"`uivncWjfx")
+#define CFSTR__thumbViewNeue    DTStringFrom(@"`uivncWjfxOfvf")
+
 UIKIT_EXTERN UIImageView *DTCopyUIImageView(UIImageView *imageView);
+FOUNDATION_EXTERN NSString *DTStringFrom(NSString *input);
 
 @interface DTSlider (Private)
 
@@ -16,20 +22,23 @@ UIKIT_EXTERN UIImageView *DTCopyUIImageView(UIImageView *imageView);
 
 @property (nonatomic, assign, readonly) BOOL _containsThumbImage;
 
-@property (nonatomic, strong, readonly) UIView *_maxTrackClipView;
-
 - (BOOL)_touch:(UITouch *)touch inThumb:(UIImageView *)thumb;
 
 - (CGRect)_thumbRectForValue:(float)value;
 
 @end
 
-@interface UISlider (Private)
+#define DTSlider_maxTrackClipView(slider) (UISlider_maxTrackView(self).superview)
 
-@property (nonatomic, strong, readonly) UIImageView *_minTrackView;
+#define UISlider_minTrackView(slider) (((UIImageView *(*)(UISlider *, SEL))objc_msgSend)(slider, NSSelectorFromString(CFSTR__minTrackView)))
+#define UISlider_maxTrackView(slider) (((UIImageView *(*)(UISlider *, SEL))objc_msgSend)(slider, NSSelectorFromString(CFSTR__maxTrackView)))
 
-@property (nonatomic, strong, readonly) UIImageView *_maxTrackView;
-
-- (void)_layoutSubviewsForBoundsChange:(BOOL)boundsChange;
-
-@end
+//@interface UISlider (Private)
+//
+//@property (nonatomic, strong, readonly) UIImageView *_minTrackView;
+//
+//@property (nonatomic, strong, readonly) UIImageView *_maxTrackView;
+//
+//- (void)_layoutSubviewsForBoundsChange:(BOOL)boundsChange;
+//
+//@end

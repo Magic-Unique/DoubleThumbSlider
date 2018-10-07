@@ -7,6 +7,17 @@
 //
 
 #import "DTSlider+Private.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
+
+static NSMutableDictionary *DTStringCaches() {
+    static NSMutableDictionary *caches = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        caches = [NSMutableDictionary dictionary];
+    });
+    return caches;
+}
 
 UIImageView *DTCopyUIImageView(UIImageView *imageView) {
     UIImageView *newImageView = [[UIImageView alloc] initWithImage:imageView.image];
@@ -20,10 +31,25 @@ UIImageView *DTCopyUIImageView(UIImageView *imageView) {
     return newImageView;
 }
 
+NSString *DTStringFrom(NSString *input) {
+    NSMutableDictionary *caches = DTStringCaches();
+    if (caches[input]) {
+        return caches[input];
+    }
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding];
+    char *bytes = (char *)data.bytes;
+    for (NSUInteger i = 0; i < data.length; i++) {
+        bytes[i]--;
+    }
+    NSString *output = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    caches[input] = output;
+    return output;
+}
+
 @implementation DTSlider (Private)
 
 - (BOOL)_containsThumbImage {
-    return [self valueForKey:@"_thumbView"] != nil;
+    return [self valueForKey:CFSTR__thumbView] != nil;
 }
 
 #pragma mark - Private method
@@ -39,7 +65,7 @@ UIImageView *DTCopyUIImageView(UIImageView *imageView) {
 }
 
 - (CGRect)_thumbRectForValue:(float)value {
-    return [self thumbRectForBounds:self.bounds trackRect:self._maxTrackClipView.frame value:value];
+    return [self thumbRectForBounds:self.bounds trackRect:DTSlider_maxTrackClipView(self).frame value:value];
 }
 
 #pragma mark - Property setter
@@ -47,9 +73,9 @@ UIImageView *DTCopyUIImageView(UIImageView *imageView) {
 - (void)set_currentThumbView:(UIImageView *)_currentThumbView {
     if (_currentThumbView) {
         if ([self _containsThumbImage]) {
-            [self setValue:_currentThumbView forKey:@"_thumbView"];
+            [self setValue:_currentThumbView forKey:CFSTR__thumbView];
         } else {
-            [self setValue:_currentThumbView forKey:@"_thumbViewNeue"];
+            [self setValue:_currentThumbView forKey:CFSTR__thumbViewNeue];
         }
         [self bringSubviewToFront:_currentThumbView];
     }
@@ -59,13 +85,10 @@ UIImageView *DTCopyUIImageView(UIImageView *imageView) {
 
 - (UIImageView *)_currentThumbView {
     if ([self _containsThumbImage]) {
-        return [super valueForKey:@"_thumbView"];
+        return [super valueForKey:CFSTR__thumbView];
     } else {
-        return [super valueForKey:@"_thumbViewNeue"];
+        return [super valueForKey:CFSTR__thumbViewNeue];
     }
 }
 
-- (UIView *)_maxTrackClipView {
-    return self._maxTrackView.superview;
-}
 @end

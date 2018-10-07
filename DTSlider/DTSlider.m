@@ -8,6 +8,8 @@
 
 #import "DTSlider.h"
 #import "DTSlider+Private.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @interface DTSlider ()
 {
@@ -52,7 +54,7 @@
 #pragma mark - View
 
 - (void)_layoutSubviewsForBoundsChange:(BOOL)boundsChange {
-    [super _layoutSubviewsForBoundsChange:boundsChange];
+    ((void (*)(struct objc_super *, SEL, BOOL))objc_msgSendSuper)(&(struct objc_super){self, [UISlider class]}, _cmd, boundsChange);
     CGRect frame = CGRectZero;
     
     if (!_oldThumbView) {
@@ -69,8 +71,8 @@
     
     CGRect progress = ({
         CGRect frame = CGRectZero;
-        CGRect min = self._minTrackView.frame;
-        CGRect max = self._maxTrackClipView.frame;
+        CGRect min = UISlider_minTrackView(self).frame;
+        CGRect max = DTSlider_maxTrackClipView(self).frame;
         frame.origin.x = min.origin.x;
         frame.origin.y = MIN(min.origin.y, max.origin.y);
         frame.size.width = CGRectGetMaxX(max) - frame.origin.x;
@@ -79,11 +81,11 @@
     });
     
     // 设置两个ThumbView之外的无效值横线
-    frame = self._maxTrackClipView.frame;
+    frame = DTSlider_maxTrackClipView(self).frame;
     frame.origin.x = progress.origin.x;
     frame.size.width = progress.size.width - 4;
-    self._maxTrackClipView.frame = frame;
-    self._maxTrackView.frame = self._maxTrackClipView.bounds;
+    DTSlider_maxTrackClipView(self).frame = frame;
+    UISlider_maxTrackView(self).frame = DTSlider_maxTrackClipView(self).bounds;
     
     //    frame = _minThumbView.frame;
     //    frame.origin.x = (progress.size.width - frame.size.width) * (self.minValue / (self.maximumValue-self.minimumValue));
@@ -99,7 +101,7 @@
     _maxThumbView.frame = frame;
     
     // 设置两个ThumbView之间的有效值横线
-    UIView *minTrackView = self._minTrackView;
+    UIView *minTrackView = UISlider_minTrackView(self);
     frame = minTrackView.frame;
     frame.size.width = _maxThumbView.center.x - _minThumbView.center.x;
     frame.origin.x = _minThumbView.center.x;
@@ -173,10 +175,6 @@
             }
         }
     }
-}
-
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesEnded:touches withEvent:event];
 }
 
 #pragma mark - Property setter
@@ -276,12 +274,9 @@
  *  交换左右滑块
  */
 - (void)exchangeMaxAndMinThumb {
-    NSLog(@"exchangeMaxAndMinThumb");
     id temp = _minThumbView;
     _minThumbView = _maxThumbView;
     _maxThumbView = temp;
 }
-
-
 
 @end
