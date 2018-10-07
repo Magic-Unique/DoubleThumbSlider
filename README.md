@@ -7,11 +7,15 @@ A slider with two thumbs.
 ## Warning ！！
 
 > **for 0.4.0 [Refused by Apple](https://github.com/Magic-Unique/DoubleThumbSlider/issues/1)**
+>
 > DTSlider use private APIs of UISlider class, It will cause your App refused by App Store. 
+>
 > DTSlider 用到了 UISlider 类中的私有 API，这将会导致你的 App 会被拒绝上传至 App Store。
 
 > **for 0.1.0**
+>
 > DTSlider has confuse private APIs, but did not test on App Store.
+>
 > DTSlider 混淆了私有 APIs，但是并没有做上传 App Store 测试。
 
 ## Preview 效果图
