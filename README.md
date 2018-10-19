@@ -6,7 +6,7 @@ A slider with two thumbs.
 
 ## Warning ！！
 
-> **for 0.4.0 [Refused by Apple](https://github.com/Magic-Unique/DoubleThumbSlider/issues/1)**
+> **for 0.0.4 [Refused by Apple](https://github.com/Magic-Unique/DoubleThumbSlider/issues/1)**
 >
 > DTSlider use private APIs of UISlider class, It will cause your App refused by App Store. 
 >
